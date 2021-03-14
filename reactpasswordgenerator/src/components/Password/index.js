@@ -16,9 +16,9 @@ function Password(props) {
         ></textarea>
       </div>
       <div className="card-footer">
-        <button id="generate" class="btn">
+        <span onClick={() => props.createPassword(props.id)} className="remove">
           Generate Password
-        </button>
+        </span>
       </div>
     </div>
   );
