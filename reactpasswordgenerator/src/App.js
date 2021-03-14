@@ -20,7 +20,7 @@ class App extends Component {}
       <Wrapper>
         <Title>Password Generator</Title>
         {this.state.friends.map(friend => (
-          <FriendCard
+          <Password
             removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
