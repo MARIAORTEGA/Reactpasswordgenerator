@@ -2,6 +2,7 @@
 import Title from "./components/Title";
 import Card from "./components/Card";
 import Options from "./components/Options";
+//import Password from "./components/Password";
 
 function App() {
   return (

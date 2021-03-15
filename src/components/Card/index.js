@@ -5,7 +5,9 @@ function Card() {
     <div className="card bg-light mb-3">
       <div className="card-body">
         <h5 className="card-title" align="center">
-          password
+          {Math.floor(Math.random() * 10) + 1},
+          {Math.floor(Math.random() * 10) + 1},
+          {Math.floor(Math.random() * 10) + 1}
         </h5>
       </div>
     </div>
@@ -13,3 +15,5 @@ function Card() {
 }
 
 export default Card;
+
+//https://www.codegrepper.com/code-examples/javascript/how+to+generate+random+alphabet+in+javascript
