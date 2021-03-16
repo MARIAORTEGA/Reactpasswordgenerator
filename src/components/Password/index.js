@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card() {
+function Password() {
   return (
     <div className="card bg-light mb-3">
       <div className="card-body">
@@ -14,6 +14,6 @@ function Card() {
   );
 }
 
-export default Card;
+export default Password;
 
 //https://www.codegrepper.com/code-examples/javascript/how+to+generate+random+alphabet+in+javascript
