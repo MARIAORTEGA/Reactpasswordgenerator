@@ -2,15 +2,16 @@
 import Title from "./components/Title";
 import Card from "./components/Card";
 import Options from "./components/Options";
-//import Password from "./components/Password";
 
 function App() {
   return (
     <div>
-      <Title /> <Card /> <Options />
+      <Title /> <Card /> <Options />{" "}
+      {/*<Alert type="danger">Please select password options :) </Alert>; */}
     </div>
   );
 }
+export default App;
 
 /////////Note2:
 // class App extends Component {
@@ -64,5 +65,3 @@ function App() {
 //     );
 //   }
 // }
-
-export default App;
