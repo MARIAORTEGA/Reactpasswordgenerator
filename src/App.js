@@ -1,13 +1,39 @@
-//import React, { Component } from "react";
+import React, { Component } from "react";
 import Title from "./components/Title";
 import Password from "./components/Password";
 import Options from "./components/Options";
 
-function App() {
-  return (
-    <div>
-      <Title /> <Password /> <Options />
-    </div>
-  );
+// function App() {
+//   return (
+
+//   );
+// }
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // initial state for pwd length and all char bools
+      uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      lowercase: "abcdefghijklmnopqrstuvwxyz",
+      numbers: "0123456789",
+      characters: "!@#$%^&*()_+=?",
+      password: "",
+    };
+  }
+  getCriteria = () => {
+    const passlength = window.prompt("Would you like uppercase letters?");
+    this.setState({ passlength: passlength });
+  };
+
+  render() {
+    // run all the above methods to calculate the password before rendering
+
+    return (
+      <div className="password button">
+        <Title getCriteria={this.getCriteria} /> <Password /> <Options />
+      </div>
+    );
+  }
 }
 export default App;
