@@ -23,6 +23,9 @@ class App extends Component {
   }
   getCriteria = () => {
     const passlength = window.prompt("Would you like uppercase letters?");
+    window.prompt("Would you like lowercase letters?");
+    window.prompt("Would you like numbers?");
+    window.prompt("Would you like special characters (such as ! @ # ?)?");
     this.setState({ passlength: passlength });
   };
 
